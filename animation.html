@@ -8,14 +8,42 @@
     <title>Animation</title>
     <style>
         @keyframes sliding {
-            from {
-                background-color: limegreen;
+            0% {
+                background-color: black;
                 left: 0;
+                top: 0;
             }
 
-            to {
+            18% {
+                background-color: antiquewhite;
+            }
+
+            20% {
+                background-color: black;
+            }
+
+            30% {
+                background-color: whitesmoke;
+            }
+
+            40% {
+                background-color: black;
+            }
+
+            50% {
+                top: 250px;
+                background-color: red;
+                transform: scale(0.5);
+            }
+
+            75% {
+                background-color: antiquewhite;
+            }
+
+            100% {
                 background-color: magenta;
-                left: 200px;
+                left: 450px;
+                top: 0;
             }
         }
 
@@ -26,8 +54,8 @@
         }
 
         .ball {
-            width: 100px;
-            height: 100px;
+            width: 50px;
+            height: 50px;
             background-color: limegreen;
             border-radius: 50%;
             position: relative;
