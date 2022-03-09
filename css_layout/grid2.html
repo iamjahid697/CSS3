@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 2</title>
+    <style>
+        .grid-iteam1 {
+            grid-area: header;
+        }
+
+        .grid-iteam2 {
+            grid-area: menu;
+        }
+
+        .grid-iteam3 {
+            grid-area: main;
+        }
+
+        .grid-iteam4 {
+            grid-area: right;
+        }
+
+        .grid-iteam5 {
+            grid-area: footer;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas: 'header header header''menu main right ''menu footer  footer';
+            gap: 10px;
+            background-color: aquamarine;
+            padding: 10px;
+        }
+
+        .grid-container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Grid 2 exploring</h1>
+    <div class="grid-container">
+        <div class="grid-iteam1">Header</div>
+        <div class="grid-iteam2">Menu</div>
+        <div class="grid-iteam3">Main</div>
+        <div class="grid-iteam4">Right</div>
+        <div class="grid-iteam5">Footer</div>
+    </div>
+
+</body>
+
+</html>
