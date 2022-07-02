@@ -6,6 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo album</title>
+    <style>
+        .photo-frame {
+            width: 300px;
+            height: 375px;
+            border: 2px solid goldenrod;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .photo img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .photo-detail {
+            display: none;
+            position: absolute;
+            width: 300px;
+            top: 0;
+        }
+
+        .photo-frame:hover .photo-detail {
+            display: block;
+            background-color: rgba(245, 213, 132, 0.5);
+        }
+    </style>
 </head>
 
 <body>
